@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 100; i++) {
+        arr[i] = Math.floor(Math.random() * 100 + 1);
+    }
+    let serchNumber = +prompt("input Number");
+    console.log(count(arr));
+    function count(arr) {
+    let count = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (serchNumber === arr[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+</script>
+</body>
+</html>
